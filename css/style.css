@@ -10,16 +10,18 @@
     --lh: var(--typical-lh)
 }
 body{
-    font-family: 'Roboto' sans-serif;
-    font-weight: 400;
+    background-color: var(--white-color);
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.top-line {}
+ul{
+list-style-type: none
+}
 
 .logo {
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: var(--lh);
@@ -32,12 +34,12 @@ body{
 }
 
 .menu-nav {
-    font-weight: 600;
+    font-weight: 700;
     color:var(--navy-blue);
 }
 
 .nav-item {
-font-weight: inherit;
+font-weight: 500;
 color: var(--navy-blue);
 text-decoration-line: none
 }
@@ -47,50 +49,46 @@ text-decoration-line: none
 .nav-item:active{
     color: var(--iris);
 }
-
-.adress {
-
-}
-
 .adress-item {
     color: var(--slate);
     text-decoration: none;
+    font-style: normal;
+    
 }
-
-.header-address {}
-
 .header {
     background-color: var(--navy-blue);
 }
 
 .header-text {
     color: var(--white-color);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
 }
 
 .header-button {
+    font-family: "Roboto", sans-serif;
     background-color: var(--iris);
     color: var(--white-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     cursor: pointer;
+    letter-spacing: 0.04em;
 }
-.filter-item{
+.filter{
+    background-color: var(--white-color);
 }
 .filter-button{
-    font-family: 'Roboto';
+    font-family: 'Roboto',sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.19;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
-    background: var(--iris);
-    color: var(--white-color);
+    background: var(--cloud);
+    color: var(--iris);
+    cursor: pointer;
 }
 .filter-button:hover{
     background: var(--iris);
@@ -100,68 +98,61 @@ text-decoration-line: none
     background: #404BBF;
     color: var(--white-color)
 }
-.feature-header {
-    display: none;
-}
 
-.feature {
-
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .feature-title {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 600;
+    color: var(--navy-blue);
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
-.feature-text {}
+.feature-text {
+    color: var(--slate);
+}
 
 .work {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 600;
+    color: var(--navy-blue);
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
 }
-
-.work-item {}
-
 .team { 
     background-color: var(--cloud);
 }
 
 .team-title {
     font-family: inherit;
-    font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    color: var(--navy-blue);
 }
-
-.team-cards {
-
-}
-
-.team-card {
-    
-}
-
 .card-name {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
 }
 
 .card-text {
-
+    color: var(--slate);
 }
 
 .footer {
@@ -169,7 +160,7 @@ text-decoration-line: none
 }
 
 .link-footer {
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
@@ -179,4 +170,7 @@ text-decoration-line: none
 
 .text-footer {
     color: #E7E9FC;
+}
+.project-link{
+    text-decoration: none;
 }
