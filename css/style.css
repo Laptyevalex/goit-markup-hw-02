@@ -43,8 +43,10 @@ font-weight: 500;
 color: var(--navy-blue);
 text-decoration-line: none
 }
-.nav-item:hover{
-    color: var(--slate);
+.nav-item:hover,
+.nav-item:focus {
+    background-color: white;
+    color: var(--iris);
 }
 .nav-item:active{
     color: var(--iris);
@@ -53,7 +55,11 @@ text-decoration-line: none
     color: var(--slate);
     text-decoration: none;
     font-style: normal;
-    
+}
+.adress-item:hover,
+.adress-item:focus {
+color: var(--iris);
+background-color: var(--white-color);
 }
 .header {
     background-color: var(--navy-blue);
@@ -90,7 +96,8 @@ text-decoration-line: none
     color: var(--iris);
     cursor: pointer;
 }
-.filter-button:hover{
+.filter-button:hover,
+.filter-button:focus {
     background: var(--iris);
     color: var(--white-color);
 }
@@ -173,4 +180,7 @@ text-decoration-line: none
 }
 .project-link{
     text-decoration: none;
+}
+.team-card{
+    background-color: var(--white-color);
 }
